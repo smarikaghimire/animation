@@ -1,0 +1,25 @@
+.sky {
+  background-color: #bde0fe;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.clouds {
+  background: url("https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    repeat-x;
+  animation: moveClouds 60s linear infinite;
+  position: absolute;
+  top: 0;
+  width: 300%;
+  height: 100%;
+}
+
+@keyframes moveClouds {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
